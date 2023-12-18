@@ -1,0 +1,129 @@
+
+
+.video-info{
+    vertical-align: top;
+}
+
+.profilepic{
+    vertical-align: top;
+
+}
+
+.channelpic{
+    width: 36px;
+    border-radius: 50%;
+    margin-top: 2px;
+}
+
+.video-title{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+    margin-top: 0;           
+}
+
+.video-statis{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-bottom: 16px;
+    border: none;
+}
+
+.video-author{
+    font-size: 12px;
+    color: rgb(96, 96, 96);
+    margin-top: 8px;
+    border: none;
+}
+
+.thumbnail-1{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.thumbnail{
+    position: relative;
+
+}
+
+.video-time{
+    position: absolute;
+    background-color: green;
+    color: white;
+    bottom:18px;
+    right: 4px;
+    font-family: Roboto,arial;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+@media (max-width: 600px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1000px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 999px){
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+.profilepic{
+    position: relative;
+
+}
+
+.toolpic{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    bottom: -40px;
+    border: 1px solid rgb(178, 178, 178);
+    border-radius: 8px;
+    overflow: hidden;
+    width: 200px;
+    height: 50px;
+    box-shadow: 1px 1px 2px 2px rgba(0,0, 0, 0.05);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s;
+}
+
+.profilepic:hover .toolpic{
+    opacity: 1;
+}
+
+.toolpic-info{
+    background-color: rgb(212, 209, 209);
+    flex: 1;
+    display: flex;
+    align-items: center;
+    font-family: Roboto,Arial;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 12px;
+}
+
+
+
